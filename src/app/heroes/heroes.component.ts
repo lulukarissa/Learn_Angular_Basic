@@ -18,7 +18,8 @@ export class HeroesComponent implements OnInit {
 
   //import dari komponen mock-heroes
   heroes: Hero[];
-  selectedHero: Hero;
+  // selectedHero: Hero;
+  // selectedHero property are no longer used after routing
   
   constructor(private heroService: HeroService) { }
 
@@ -37,8 +38,8 @@ export class HeroesComponent implements OnInit {
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {
-    this.selectedHero = hero;
-  }
+  // onSelect(hero: Hero): void {
+  //   this.selectedHero = hero;
+  // }
 
 }
