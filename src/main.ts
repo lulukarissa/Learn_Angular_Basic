@@ -8,5 +8,6 @@ if (environment.production) {
   enableProdMode();
 }
 
+//kode yang mendefinisikan module yang melakukan bootstraping
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
